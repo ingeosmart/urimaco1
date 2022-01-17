@@ -619,13 +619,13 @@
                     </tr>\
                     <tr>\
                         <th scope="row">imagen</th>\
-                        <td>' + (feature.properties['imagen'] !== null ? autolinker.link(feature.properties['imagen'].toLocaleString()) : '') + '</td>\
+                        <td>' + (feature.properties['imagen'] !== null ? "</b><br> <center><img src='img/" + String(feature.properties['FOTO'])
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['img_url'] !== null ? '<img src="img/' + String(feature.properties['FOTO']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
                     </tr>\
                 </table>';
-            layer.bindPopup(popupContent, <img src= img/ + String(feature.properties['FOTO']),  {maxHeight: 400});
+            layer.bindPopup(popupContent ,  {maxHeight: 400});
         }
 
         function style_FOTOEJES_7_0() {
